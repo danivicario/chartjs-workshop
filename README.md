@@ -18,3 +18,5 @@ Visit https://www.chartjs.org/samples/latest/
   * Doughnut
   * Pie
   * Combo bar/line
+
+Animation, update and destroy
