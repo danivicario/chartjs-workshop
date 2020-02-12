@@ -8,7 +8,7 @@ function printTheChart(stockData) {
 
   // brutal ==> https://www.chartjs.org/docs/latest/charts/line.html#dataset-properties
   chart = new Chart(ctx, {
-    type: "line",
+    type: "horizontalBar",
     data: {
       labels: stockDates,
       datasets: [
