@@ -5,27 +5,3 @@
 ## ChartJS examples
 
 Visit https://www.chartjs.org/samples/latest/
-
-## Visit Grafana playground
-
-Visit:
-
-* https://play.grafana.org/d/vmie2cmWz/bar-gauge?orgId=1&refresh=10s
-* https://play.grafana.org/d/000000003/big-dashboard?orgId=1
-* https://play.grafana.org/d/000000152/grafana-play-home2?orgId=1
-
-## Install Grafana
-
-Install docker in your machine and then run `docker run -d --name=grafana-xxl -p 4000:3000 monitoringartist/grafana-xxl:latest`
-
-Then hit it via http://localhost:3000
-
-Username / Password: `admin/admin`
-
-## Dragula - easy drag and drop
-
-Visit https://bevacqua.github.io/dragula/
-
-## Docker
-
-<img src="https://www.docker.com/sites/default/files/d8/styles/large/public/2018-11/container-what-is-container.png?itok=vle7kjDj">
