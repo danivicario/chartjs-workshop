@@ -21,4 +21,4 @@ Visit https://www.chartjs.org/samples/latest/
 
 Animation, update and destroy
 
-t: @dani_vicario / g: prussian-blue
+<img src="https://raw.githubusercontent.com/webmad0120-1/w1d3-advanced-selectors-positioning-full-layout/master/img/ironhack.svg?sanitize=true" alt="Ironhack" width="60"/> @dani_vicario / g: prussian-blue
