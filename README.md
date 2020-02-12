@@ -5,3 +5,16 @@
 ## ChartJS examples
 
 Visit https://www.chartjs.org/samples/latest/
+
+* Bar charts
+  * Vertical
+  * Stacked
+* Line charts
+  * Basic
+  * Different line styles
+* Area charts
+  * Stacked (line)
+* Other charts
+  * Doughnut
+  * Pie
+  * Combo bar/line
