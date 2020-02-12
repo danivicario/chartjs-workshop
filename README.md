@@ -21,4 +21,4 @@ Visit https://www.chartjs.org/samples/latest/
 
 Animation, update and destroy
 
-<img src="https://raw.githubusercontent.com/prussian-blue/chartjs-workshop/master/img/Twitter_Logo_Blue.svg" alt="twitter" width="60"/> @dani_vicario / g: prussian-blue
+<img src="https://raw.githubusercontent.com/prussian-blue/chartjs-workshop/master/img/Twitter_Logo_Blue.png" alt="twitter" width="60"/> @dani_vicario / g: prussian-blue
