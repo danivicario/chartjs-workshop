@@ -30,6 +30,24 @@ function printStockMarketData() {
         }
       ]
     }
+    // options: {
+    //   scales: {
+    //     xAxes: [
+    //       {
+    //         stacked: true
+    //       }
+    //     ],
+    //     yAxes: [
+    //       {
+    //         stacked: true
+    //       }
+    //     ]
+    //   },
+    //   title: {
+    //     display: true,
+    //     text: "Chart.js Bar Chart - Stacked"
+    //   }
+    // }
   });
 
   // data addition

@@ -8,11 +8,11 @@ Visit https://www.chartjs.org/samples/latest/
 
 - Line charts
   - Basic ✅
-  - Different line styles
+  - Different line styles ✅
 - Bar charts
   - Vertical ✅
   - Horizontal ✅
-  - Stacked
+  - Stacked ✅
 - Area charts
   - Stacked (line)
 - Other charts
