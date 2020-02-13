@@ -21,7 +21,6 @@ function printStockMarketData() {
           lineTension: 0,
           label: "Stock Chart",
           backgroundColor: randomRGBA(0.3),
-          // borderColor: randomRGBA(.3),
           data: stockPrices
         },
         {
@@ -33,7 +32,6 @@ function printStockMarketData() {
           lineTension: 0,
           label: "Stock Chart",
           backgroundColor: randomRGBA(0.3),
-          // borderColor: randomRGBA(.3),
           data: stockPrices.map((stockPrice) => stockPrice * Math.random())
         }
       ]

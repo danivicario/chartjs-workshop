@@ -29,25 +29,25 @@ function printStockMarketData() {
           data: stockPrices.map((stockPrice) => stockPrice * Math.random())
         }
       ]
+    },
+    options: {
+      scales: {
+        xAxes: [
+          {
+            stacked: true
+          }
+        ],
+        yAxes: [
+          {
+            stacked: true
+          }
+        ]
+      },
+      title: {
+        display: true,
+        text: "Ironbars stacked"
+      }
     }
-    // options: {
-    //   scales: {
-    //     xAxes: [
-    //       {
-    //         stacked: true
-    //       }
-    //     ],
-    //     yAxes: [
-    //       {
-    //         stacked: true
-    //       }
-    //     ]
-    //   },
-    //   title: {
-    //     display: true,
-    //     text: "Chart.js Bar Chart - Stacked"
-    //   }
-    // }
   });
 
   // data addition
