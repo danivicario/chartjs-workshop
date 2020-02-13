@@ -19,4 +19,6 @@ Visit https://www.chartjs.org/samples/latest/
 
 API methods we will review: animation, update and destroy
 
+Run the project via `npm install` and then `npm start`
+
 twitter: [@dani_vicario](https://twitter.com/dani_vicario) // github: [github](https://github.com/prussian-blue)
