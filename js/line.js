@@ -8,13 +8,13 @@ function printTheChart(stockData) {
 
   // brutal ==> https://www.chartjs.org/docs/latest/charts/line.html#dataset-properties
   chart = new Chart(ctx, {
-    type: "horizontalBar",
+    type: "bar", // line bar horizontalBar
     data: {
       labels: stockDates,
       datasets: [
         {
           hoverBorderColor: "red",
-          hoverBorderWidth: 5,
+          hoverBorderWidth: 2,
           showLabels: false,
           // showLine: false,
           borderJoinStyle: "round",
@@ -29,7 +29,7 @@ function printTheChart(stockData) {
         },
         {
           hoverBorderColor: "red",
-          hoverBorderWidth: 5,
+          hoverBorderWidth: 2,
           showLabels: false,
           // showLine: false,
           borderJoinStyle: "round",
@@ -40,21 +40,21 @@ function printTheChart(stockData) {
             255
           )}, 1)`,
           borderColor: `rgba(${randomInt(0, 255)}, ${randomInt(0, 255)}, ${randomInt(0, 255)}, 1)`,
-          data: stockPrices
+          data: stockPrices.map(stockPrice => stockPrice * Math.random())
         }
       ]
     }
   });
 
-  setInterval(() => {
-    chart.data.datasets[0].backgroundColor = `rgba(${randomInt(0, 255)}, ${randomInt(
-      0,
-      255
-    )}, ${randomInt(0, 255)}, 1)`;
-    // chart.data.labels = stockDates.map(() => Array(10).fill().map(() => String.fromCharCode(randomInt(100, 110))).join(""))
-    chart.data.labels = stockDates.map(() => "");
-    chart.data.datasets[0].data = stockPrices.map(x => randomFloat(1, randomInt(10, 1000)));
-    chart.data.datasets[1].data = stockPrices.map(x => randomFloat(1, randomInt(10, 1000)));
-    chart.update();
-  }, 2000);
+  // setInterval(() => {
+  //   chart.data.datasets[0].backgroundColor = `rgba(${randomInt(0, 255)}, ${randomInt(
+  //     0,
+  //     255
+  //   )}, ${randomInt(0, 255)}, 1)`;
+  //   // chart.data.labels = stockDates.map(() => Array(10).fill().map(() => String.fromCharCode(randomInt(100, 110))).join(""))
+  //   chart.data.labels = stockDates.map(() => "");
+  //   chart.data.datasets[0].data = stockPrices.map(x => randomFloat(1, randomInt(10, 1000)));
+  //   chart.data.datasets[1].data = stockPrices.map(x => randomFloat(1, randomInt(10, 1000)));
+  //   chart.update();
+  // }, 2000);
 }
