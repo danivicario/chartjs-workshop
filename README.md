@@ -16,8 +16,8 @@ Visit https://www.chartjs.org/samples/latest/
 - Area charts
   - Stacked (line)
 - Other charts
-  - Doughnut
-  - Pie
+  - Doughnut ✅
+  - Pie ✅
   - Combo bar/line
 
 Animation, update and destroy
