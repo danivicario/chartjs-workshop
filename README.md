@@ -7,19 +7,16 @@
 Visit https://www.chartjs.org/samples/latest/
 
 - Line charts
-  - Basic ✅
-  - Different line styles ✅
+  - Basic 
+  - Different line styles 
 - Bar charts
-  - Vertical ✅
-  - Horizontal ✅
-  - Stacked ✅
-- Area charts
-  - Stacked (line)
+  - Vertical 
+  - Horizontal 
+  - Stacked 
 - Other charts
-  - Doughnut ✅
-  - Pie ✅
-  - Combo bar/line
+  - Doughnut 
+  - Pie 
 
-Animation, update and destroy
+API methods we will review: animation, update and destroy
 
 twitter: [@dani_vicario](https://twitter.com/dani_vicario) // github: [github](https://github.com/prussian-blue)
