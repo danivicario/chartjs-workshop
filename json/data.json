@@ -1,5 +1,19 @@
 {
-  "data": {
+  "monthData": {
+    "january": 100,
+    "february": 120,
+    "march": 130,
+    "april": 140,
+    "may": 180,
+    "june": 200,
+    "july": 100,
+    "august": 150,
+    "september": 110,
+    "october": 190,
+    "november": 120,
+    "december": 140
+  },
+  "stockMarketData": {
     "2020-02-12": {
       "1. open": "185.5800",
       "2. high": "185.8500",

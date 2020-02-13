@@ -1,5 +1,5 @@
-function printTheChart(stockData) {
-  const dailyData = stockData;
+function printStockMarketData() {
+  const dailyData = chartDataStockMarket;
 
   const stockDates = Object.keys(dailyData);
   const stockPrices = stockDates.map(date => {
@@ -20,11 +20,8 @@ function printTheChart(stockData) {
           borderJoinStyle: "round",
           lineTension: 0,
           label: "Stock Chart",
-          backgroundColor: `rgba(${randomInt(0, 255)}, ${randomInt(0, 255)}, ${randomInt(
-            0,
-            255
-          )}, 1)`,
-          borderColor: `rgba(${randomInt(0, 255)}, ${randomInt(0, 255)}, ${randomInt(0, 255)}, 1)`,
+          backgroundColor: randomRGBA(0.3),
+          // borderColor: randomRGBA(.3),
           data: stockPrices
         },
         {
@@ -35,22 +32,35 @@ function printTheChart(stockData) {
           borderJoinStyle: "round",
           lineTension: 0,
           label: "Stock Chart",
-          backgroundColor: `rgba(${randomInt(0, 255)}, ${randomInt(0, 255)}, ${randomInt(
-            0,
-            255
-          )}, 1)`,
-          borderColor: `rgba(${randomInt(0, 255)}, ${randomInt(0, 255)}, ${randomInt(0, 255)}, 1)`,
+          backgroundColor: randomRGBA(0.3),
+          // borderColor: randomRGBA(.3),
           data: stockPrices.map(stockPrice => stockPrice * Math.random())
         }
       ]
     }
   });
 
+  // data addition
   // setInterval(() => {
-  //   chart.data.datasets[0].backgroundColor = `rgba(${randomInt(0, 255)}, ${randomInt(
-  //     0,
-  //     255
-  //   )}, ${randomInt(0, 255)}, 1)`;
+  //   chart.data.datasets[0].backgroundColor = randomRGBA(.3);
+  //   // chart.data.labels = stockDates.map(() => Array(10).fill().map(() => String.fromCharCode(randomInt(100, 110))).join(""))
+  //   chart.data.labels.push("new");
+  //   chart.data.datasets[0].data.push(180);
+  //   chart.data.datasets[1].data.push(190);
+  //   chart.update();
+  // }, 2000);
+
+  // data removal
+  // setInterval(() => {
+  //   chart.data.datasets[0].backgroundColor = randomRGBA(.3);
+  //   chart.data.labels.pop();
+  //   chart.data.datasets[0].data.pop();
+  //   chart.data.datasets[1].data.pop();
+  //   chart.update();
+  // }, 2000);
+
+  // setInterval(() => {
+  //   chart.data.datasets[0].backgroundColor = randomRGBA(.3);
   //   // chart.data.labels = stockDates.map(() => Array(10).fill().map(() => String.fromCharCode(randomInt(100, 110))).join(""))
   //   chart.data.labels = stockDates.map(() => "");
   //   chart.data.datasets[0].data = stockPrices.map(x => randomFloat(1, randomInt(10, 1000)));
