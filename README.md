@@ -6,12 +6,13 @@
 
 Visit https://www.chartjs.org/samples/latest/
 
-- Bar charts
-  - Vertical
-  - Stacked
 - Line charts
-  - Basic
+  - Basic ✅
   - Different line styles
+- Bar charts
+  - Vertical ✅
+  - Horizontal ✅
+  - Stacked
 - Area charts
   - Stacked (line)
 - Other charts
