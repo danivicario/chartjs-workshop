@@ -2,13 +2,13 @@ function printStockMarketData() {
   const dailyData = chartDataStockMarket;
 
   const stockDates = Object.keys(dailyData);
-  const stockPrices = stockDates.map(date => {
+  const stockPrices = stockDates.map((date) => {
     return dailyData[date]["4. close"];
   });
 
   // brutal ==> https://www.chartjs.org/docs/latest/charts/line.html#dataset-properties
   chart = new Chart(ctx, {
-    type: "bar", // line bar horizontalBar
+    type: "line", // line bar horizontalBar
     data: {
       labels: stockDates,
       datasets: [
@@ -34,7 +34,7 @@ function printStockMarketData() {
           label: "Stock Chart",
           backgroundColor: randomRGBA(0.3),
           // borderColor: randomRGBA(.3),
-          data: stockPrices.map(stockPrice => stockPrice * Math.random())
+          data: stockPrices.map((stockPrice) => stockPrice * Math.random())
         }
       ]
     }
